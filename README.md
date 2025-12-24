@@ -1,2 +1,52 @@
 # KNN-Diamond-Price-Predictor
 KNN regression built from scratch to predict diamond price using diamonds dataset.
+
+# KNN-Diamond-Price-Scratch
+
+K-Nearest Neighbors **regression model built fully from scratch** to predict diamond prices on a real-world Diamonds dataset (~54,000 rows). Manual k tuning, proper preprocessing, full iteration on test data, and comparison with sklearn’s in-built KNN show a working, stable, and job-ready implementation.
+
+## KNN Regression Algorithm (How It Works)
+1. Manually select a k value (example: k=5)  
+2. For each test diamond, compute distance to all train diamonds using Euclidean distance  
+3. Sort distances from smallest to largest  
+4. Pick top k nearest neighbor prices  
+5. Take the mean of those k prices → predicted price  
+
+**Euclidean Distance Formula:**  
+`distance = sqrt( sum((x1 - x2)^2) )`
+
+## Dataset & Preprocessing
+- Dataset: `diamonds.csv` (mixed numerical + categorical features)  
+- Target: `price` (USD 326 – 18823)  
+- Train/Test split: 75:25 (using sklearn split, no data leakage)  
+- Categorical encoding: One-Hot Encoder (`cut, color, clarity` → 0/1 vectors)  
+- Numerical scaling: Standard Scaling (`(x-mean)/std`) for fair KNN distance  
+
+## Model Results (k = 5 chosen manually)
+| Model | Predictions | MAE (USD) | RMSE (USD) |
+|---|---:|---:|---:|
+| Scratch KNN | 13,485 | 672.41 | 1195.82 |
+| Sklearn KNN | 13,485 | 650.59 | 1143.64 |
+
+**What This Means:** Predictions count is same for both, errors are close, proving my scratch model works correctly on full test data. MAE ~650-670 USD shows the model predicts diamond prices very close to real market values. RMSE confirms stable performance on large feature ranges.
+
+## Tech Stack / Tools Used
+Python, Pandas, NumPy, Matplotlib, OneHotEncoder, StandardScaler, ColumnTransformer, Git, GitHub, Jupyter Notebook. KNN logic written manually using loops, distance ranking, and mean neighbor price prediction (no sklearn KNN used in scratch part).
+
+## Why This Project is Job-Ready
+- Real business dataset (~54K rows) used  
+- Preprocessing fit only on train (no leakage)  
+- Categories converted to numeric vectors for ML  
+- Features scaled so distance is fair  
+- KNN regression built from math and loops  
+- Manual k tuning as required (no automated search)  
+- Compared results clearly with sklearn KNN  
+- Predictions generated for all test rows  
+- Evaluated using standard metrics (MAE, RMSE)  
+
+## Skills Demonstrated
+Data Loading, Data Cleaning, Feature Encoding, Feature Scaling, Distance-Based Learning, Algorithm Implementation from Scratch, Model Evaluation, Result Reporting, GitHub Documentation.
+
+KNN is non-parametric and learns using distance at prediction time. Small k → noisy boundary, large k → smoother. `k=5` gives a balanced and stable prediction for regression, so it was used for final comparison.
+
+Eat, Code, Sleep, Repeat.
