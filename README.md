@@ -33,20 +33,6 @@ K-Nearest Neighbors **regression model built fully from scratch** to predict dia
 ## Tech Stack / Tools Used
 Python, Pandas, NumPy, Matplotlib, OneHotEncoder, StandardScaler, ColumnTransformer, Git, GitHub, Jupyter Notebook. KNN logic written manually using loops, distance ranking, and mean neighbor price prediction (no sklearn KNN used in scratch part).
 
-## Why This Project is Job-Ready
-- Real business dataset (~54K rows) used  
-- Preprocessing fit only on train (no leakage)  
-- Categories converted to numeric vectors for ML  
-- Features scaled so distance is fair  
-- KNN regression built from math and loops  
-- Manual k tuning as required (no automated search)  
-- Compared results clearly with sklearn KNN  
-- Predictions generated for all test rows  
-- Evaluated using standard metrics (MAE, RMSE)  
 
-## Skills Demonstrated
-Data Loading, Data Cleaning, Feature Encoding, Feature Scaling, Distance-Based Learning, Algorithm Implementation from Scratch, Model Evaluation, Result Reporting, GitHub Documentation.
-
-KNN is non-parametric and learns using distance at prediction time. Small k → noisy boundary, large k → smoother. `k=5` gives a balanced and stable prediction for regression, so it was used for final comparison.
 
 Eat, Code, Sleep, Repeat.
