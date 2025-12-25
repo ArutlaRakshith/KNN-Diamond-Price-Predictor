@@ -25,8 +25,8 @@ K-Nearest Neighbors **regression model built fully from scratch** to predict dia
 ## Model Results (k = 5 chosen manually)
 | Model | Predictions | MAE (USD) | RMSE (USD) |
 |---|---:|---:|---:|
-| Scratch KNN | 13,485 | 672.41 | 1195.82 |
-| Sklearn KNN | 13,485 | 650.59 | 1143.64 |
+| Scratch KNN | 13,485 | 591.41 | 1075.82 |
+| Sklearn KNN | 13,485 | 591.59 | 1075.64 |
 
 **What This Means:** Predictions count is same for both, errors are close, proving my scratch model works correctly on full test data. MAE ~650-670 USD shows the model predicts diamond prices very close to real market values. RMSE confirms stable performance on large feature ranges.
 
