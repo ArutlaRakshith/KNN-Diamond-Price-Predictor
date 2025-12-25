@@ -3,7 +3,7 @@ KNN regression built from scratch to predict diamond price using diamonds datase
 
 # KNN-Diamond-Price-Scratch
 
-K-Nearest Neighbors **regression model built fully from scratch** to predict diamond prices on a real-world Diamonds dataset (~54,000 rows). Manual k tuning, proper preprocessing, full iteration on test data, and comparison with sklearn’s in-built KNN show a working, stable, and job-ready implementation.
+K-Nearest Neighbors **regression model built fully from scratch** to predict diamond prices on a real-world Diamonds dataset (~54,000 rows). Manual k tuning, proper preprocessing, full iteration on test data, and comparison with sklearn’s in-built KNN show a working, stable.
 
 ## KNN Regression Algorithm (How It Works)
 1. Manually select a k value (example: k=5)  
@@ -28,7 +28,7 @@ K-Nearest Neighbors **regression model built fully from scratch** to predict dia
 | Scratch KNN | 13,485 | 591.41 | 1075.82 |
 | Sklearn KNN | 13,485 | 591.59 | 1075.64 |
 
-**What This Means:** Predictions count is same for both, errors are close, proving my scratch model works correctly on full test data. MAE ~650-670 USD shows the model predicts diamond prices very close to real market values. RMSE confirms stable performance on large feature ranges.
+**What This Means:** Predictions count is same for both, errors are close, proving my scratch model works correctly on full test data. MAE ~500-670 USD shows the model predicts diamond prices very close to real market values. RMSE confirms stable performance on large feature ranges.
 
 ## Tech Stack / Tools Used
 Python, Pandas, NumPy, Matplotlib, OneHotEncoder, StandardScaler, ColumnTransformer, Git, GitHub, Jupyter Notebook. KNN logic written manually using loops, distance ranking, and mean neighbor price prediction (no sklearn KNN used in scratch part).
